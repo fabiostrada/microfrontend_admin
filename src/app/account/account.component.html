@@ -1,0 +1,8 @@
+<ng-container *ngIf="!!user">
+    <div>
+        User: {{user.fullname}} 
+    </div>
+    <div>
+        Roles: <span *ngFor="let role of user.roles">{{role.name}} </span>
+    </div>
+</ng-container>
